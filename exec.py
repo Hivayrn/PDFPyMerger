@@ -73,6 +73,7 @@ def merger(parent):
 
         except PyPDF2.errors.FileNotDecryptedError:
             # If we encounter an encrypted file during processing, it will show us an error
+            # errors
             my_errors(parent, merge, photo_list)
             print('There are Decrypted Files!')
             return None
